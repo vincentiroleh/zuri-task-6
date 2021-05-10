@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const { DB_URL } = require('./env');
 
-const options = { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false };
+const options = { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false, useCreateIndex: true };
 
 try {
     mongoose.connect(DB_URL, options)

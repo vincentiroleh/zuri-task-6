@@ -183,9 +183,13 @@ Content-Type: application/json
 }
 ```
 
-- **URL**: `/user`
+- **URL**: `/user/:id`
 
 - **Method**: `PUT`
+
+- **URL Params**
+
+  `id=[string]`
 
 - **Data Params**
 
