@@ -19,7 +19,7 @@ app.use(logger('dev')); // morgan logger
 app.use(`${api}`, require('./api/index')); // routers
 
 app.get('/', (req, res) => {
-    res.status(400).json({
+    res.status(200).json({
         message: 'Welcome on board',
         doc: 'https://github.com/vincentiroleh/zuri-task-6'
     })
